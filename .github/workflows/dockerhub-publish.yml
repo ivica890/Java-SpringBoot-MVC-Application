@@ -5,6 +5,9 @@ jobs:
   push_to_registry:
     name: push docker image to hub
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./MVC
     steps:
       - name: check repository
         uses: actions/checkout@v4
